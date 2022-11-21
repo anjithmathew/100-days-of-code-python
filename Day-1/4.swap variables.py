@@ -1,14 +1,14 @@
-#swap variables program
+# swap variables program
 
 a = int(input(" a= "))
 b = int(input(" = "))
 
-#swap variables
+# swap variables
 
-c = a 
-a =b
-b =c
+c = a
+a = b
+b = c
 
-print("a =" ,a)
+print("a =", a)
 
-print("b =" ,b)
+print("b =", b)
