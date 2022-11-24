@@ -5,7 +5,7 @@
 <p>
 
 <h1> 100 Days Of Code</h1>
-<strong>  __My Personal Adventure__ </strong>
+<strong>  __My Personal Python  Adventure__ </strong>
 <hr>
 </p>
 <br>
