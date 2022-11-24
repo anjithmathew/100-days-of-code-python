@@ -1,6 +1,9 @@
-# 100-days-of-code-python
+# 100 Days Of Code
 <br>
+
 <p>
-<img src="100-days-of-code-python/*images/#100DaysOfCode - Dark design.png" alt="100 Days of Code" />
-</p>
-Learnig Curve
+<img src="https://github.com/anjithmathew/100-days-of-code-python/blob/main/*images/%23100DaysOfCode%20-%20Dark%20design.png" alt="100 Days of Code" /> </img>
+
+<p>
+<br>
+<h3 color ="green"> Day 1</h3>
