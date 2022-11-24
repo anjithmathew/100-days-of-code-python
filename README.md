@@ -1,4 +1,5 @@
 # 100-days-of-code-python
 <br>
-![Alt text](*images/#100DaysOfCode - Dark design.png?raw=true)
+![100 Days OF Code](*images/#100DaysOfCode - Dark design.png)
+
 Learnig Curve
