@@ -18,7 +18,7 @@ class Amazon_Scrapper():
     def scraping(self):
         """ attributes of the products procured from the page"""
         self.product_name_list = []
-        self.rating = []
+        self.price  = []
         self.soup = BeautifulSoup(requests.get(
             self.base_url, headers=self.headers).text, 'html.parser')
         self.data = self.soup.find_all(
@@ -26,15 +26,14 @@ class Amazon_Scrapper():
         for self.product in self.data:
             self.product_name = self.product.find(
                 "span", class_="a-size-medium a-color-base a-text-normal")
+                #class="a-price-whole"
+            self.product_name = self.product.find(
+                "span", class_="a-size-medium a-color-base a-text-normal")
+
             self.product_name_list.append(self.product_name.getText().strip())
         print("----Products ---")
         [print(i) for i in self.product_name_list]
-
-
-"""for item in div:
-    title = item.find("h3")
-    print(title.getText().strip())
-"""
+    
 
 product = Amazon_Scrapper()
 product.scraping()
