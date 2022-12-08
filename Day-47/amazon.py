@@ -1,3 +1,4 @@
+import streamlit as st
 from bs4 import BeautifulSoup
 import smtplib
 import requests
@@ -6,6 +7,13 @@ import pandas as pd
 
 class Amazon_Scrapper():
 
+    def streamlit(self):
+        st.title("Amazon Scrapper")
+        self.user_input = st.text_input("Search Here ")
+
+
+
+
     def __init__(self):
         print("----Enter Tech items only----")
         self.search_query = input('\nEnter your search query:').replace(" ", "+")
@@ -13,6 +21,12 @@ class Amazon_Scrapper():
         self.headers = {
             "User-Agent": 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
         }
+
+
+
+    # def streamlit(self):
+    #     st.title("Amazon Scrapper")
+    #     self.user_input = st.text_input("Search Here ")
 
     def scraping(self):
         """ attributes of the products procured from the page"""
@@ -24,7 +38,7 @@ class Amazon_Scrapper():
         for self.product in self.data:
             self.product_name = self.product.find(
                 "span", class_="a-size-medium a-color-base a-text-normal")
-                #class="a-price-whole"
+                # class="a-price-whole"
             self.product_name = self.product.find(
                 "span", class_="a-size-medium a-color-base a-text-normal")
 
@@ -41,3 +55,4 @@ class Amazon_Scrapper():
 
 product = Amazon_Scrapper()
 product.scraping()
+product.streamlit()
