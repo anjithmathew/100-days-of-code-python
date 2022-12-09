@@ -7,7 +7,7 @@ from selenium.webdriver.chrome.options import Options
 
 class game():
     def __init__(self):
-        self.website = "https://orteil.dashnet.org/cookieclicker/"
+        self.website = "http://orteil.dashnet.org/experiments/cookie/"
         self.path = "/home/toor/Downloads/chromedriver"
 
     def automation(self):
@@ -19,12 +19,14 @@ class game():
 
         "clicking the first language element"
 
-        self.language_element = self.find_element(
-            By.ID, "langSelect-EN"  )
-        self.language_element.click
 
-        self.cookie = self.find_element(BY.ID,"bigCookie")
-        self.cookie.click
+
+        # self.language_element = self.find_element(
+        #     By.ID, "cookie"  )
+        # self.language_element.click
+
+        self.cookie = self.find_element(BY.ID,"cookie")
+        print(self.cookie.text)
 
 
 cookie = game()
